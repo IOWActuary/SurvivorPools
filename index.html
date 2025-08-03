@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Splash Sports - Contest Lobby</title>
+    <title>Survivor Universe</title>
     <style>
         body {
             background-color: #000;
@@ -62,13 +62,23 @@
             background-color: #013201;
             font-weight: bold;
         }
+
+        /* Link style */
+        a {
+            color: #33ff33; /* A slightly brighter green for links */
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            text-shadow: 0 0 5px #33ff33;
+        }
     </style>
 </head>
 <body>
     <canvas id="matrix-canvas"></canvas>
 
     <div class="content-container">
-        <h1>【Ｓｐｌａｓｈ　Ｓｐｏｒｔｓ　Ｃｏｎｔｅｓｔ　Ｌｏｂｂｙ】</h1>
+        <h1>【﻿Ｓｕｒｖｉｖｏｒ　Ｕｎｉｖｅｒｓｅ】</h1>
 
         <table>
             <thead>
@@ -80,369 +90,132 @@
                     <th>Prizes</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>Circa Survivor</td>
-                    <td>NFL Survivor</td>
-                    <td>N/A</td>
-                    <td>$1,000</td>
-                    <td>$9,000,000+ Guaranteed</td>
-                </tr>
-                <tr>
-                    <td>Circa Millions VI</td>
-                    <td>NFL Pick'em</td>
-                    <td>N/A</td>
-                    <td>$1,000</td>
-                    <td>$6,000,000 Guaranteed</td>
-                </tr>
-                <tr>
-                    <td>DraftKings Main Event NFL Survivor</td>
-                    <td>NFL Survivor</td>
-                    <td>18,515 / Unlimited</td>
-                    <td>$100</td>
-                    <td>$1,666,350</td>
-                </tr>
-                 <tr>
-                    <td>DraftKings Mega NFL Survivor Pool</td>
-                    <td>NFL Survivor</td>
-                    <td>729 / Unlimited</td>
-                    <td>$1,000</td>
-                    <td>$685,260</td>
-                </tr>
-                <tr>
-                    <td>DraftKings Mini NFL Survivor Pool</td>
-                    <td>NFL Survivor</td>
-                    <td>N/A</td>
-                    <td>$10</td>
-                    <td>$100,000</td>
-                </tr>
-                 <tr>
-                    <td>DraftKings Free $30K Football Survivor</td>
-                    <td>NFL Survivor</td>
-                    <td>251,059 / Unlimited</td>
-                    <td>Free</td>
-                    <td>$30,000</td>
-                </tr>
-                <tr>
-                    <td>The Big Splash $2.5M NFL Survivor</td>
-                    <td>NFL Survivor</td>
-                    <td>274 / 18519</td>
-                    <td>$150</td>
-                    <td>$2,500,065</td>
-                </tr>
-                <tr>
-                    <td>D. Epigskin's Main NFL Survival</td>
-                    <td>NFL Survivor</td>
-                    <td>729 / 20000</td>
-                    <td>$100</td>
-                    <td>$1,800,000</td>
-                </tr>
-                <tr>
-                    <td>H. Walker's Ultimate Survivor</td>
-                    <td>NFL Survivor</td>
-                    <td>1910 / 50000</td>
-                    <td>$25</td>
-                    <td>$1,125,000</td>
-                </tr>
-                <tr>
-                    <td>ONLY THE STRONG SURVIVE!!</td>
-                    <td>NFL Survivor</td>
-                    <td>9 / 25000</td>
-                    <td>$25</td>
-                    <td>$546,875</td>
-                </tr>
-                <tr>
-                    <td>For The Fans - Survivor '25</td>
-                    <td>NFL Survivor</td>
-                    <td>276 / 9723</td>
-                    <td>$40</td>
-                    <td>$350,028</td>
-                </tr>
-                <tr>
-                    <td>2025 Eliminator</td>
-                    <td>NFL Survivor</td>
-                    <td>28 / 5000</td>
-                    <td>$50</td>
-                    <td>$225,000</td>
-                </tr>
-                <tr>
-                    <td>Kelly & Murray's $150K CFB Survivor Challenge</td>
-                    <td>CFB Survivor</td>
-                    <td>95 / 1667</td>
-                    <td>$100</td>
-                    <td>$150,030</td>
-                </tr>
-                 <tr>
-                    <td>NFL Survivor $150K</td>
-                    <td>NFL Survivor</td>
-                    <td>0 / 250</td>
-                    <td>$10</td>
-                    <td>$150,000</td>
-                </tr>
-                <tr>
-                    <td>NFL Survivor $100K</td>
-                    <td>NFL Survivor</td>
-                    <td>0 / 130</td>
-                    <td>$10</td>
-                    <td>$100,000</td>
-                </tr>
-                <tr>
-                    <td>H. King of the Hill 2025</td>
-                    <td>NFL Survivor</td>
-                    <td>32 / 2000</td>
-                    <td>$50</td>
-                    <td>$87,500</td>
-                </tr>
-                <tr>
-                    <td>NFL Survivor $75K</td>
-                    <td>NFL Survivor</td>
-                    <td>0 / 725</td>
-                    <td>$10</td>
-                    <td>$75,000</td>
-                </tr>
-                <tr>
-                    <td>A. The Gumball Rally</td>
-                    <td>NFL Survivor</td>
-                    <td>44 / 700</td>
-                    <td>$100</td>
-                    <td>$63,000</td>
-                </tr>
-                <tr>
-                    <td>Splash $50K NFL Survivor</td>
-                    <td>NFL Survivor</td>
-                    <td>1419 / 11112</td>
-                    <td>$5</td>
-                    <td>$50,004</td>
-                </tr>
-                 <tr>
-                    <td>Splash $50K CFB Survivor</td>
-                    <td>CFB Survivor</td>
-                    <td>97 / 2223</td>
-                    <td>$25</td>
-                    <td>$50,017</td>
-                </tr>
-                <tr>
-                    <td>High Roller Eliminator</td>
-                    <td>NFL Survivor</td>
-                    <td>3 / 300</td>
-                    <td>$100</td>
-                    <td>$26,250</td>
-                </tr>
-                <tr>
-                    <td>NFL SURVIVOR (beat_the_sportsbook)</td>
-                    <td>NFL Survivor</td>
-                    <td>2 / 1000</td>
-                    <td>$25</td>
-                    <td>$21,875</td>
-                </tr>
-                <tr>
-                    <td>NFL SURVIVOR (beat_the_sportsbook)</td>
-                    <td>NFL Survivor</td>
-                    <td>0 / 3000</td>
-                    <td>$5</td>
-                    <td>$13,500</td>
-                </tr>
-                <tr>
-                    <td>D. Epigskin's Hit Streak Survivor</td>
-                    <td>Player Survivor</td>
-                    <td>19 / 512</td>
-                    <td>$25</td>
-                    <td>$11,200</td>
-                </tr>
-                <tr>
-                    <td>Spooky Express $10 FedEx St. Jude Golf Contest</td>
-                    <td>PGA Tiers</td>
-                    <td>19 / 1000</td>
-                    <td>$10</td>
-                    <td>$8,750</td>
-                </tr>
-                <tr>
-                    <td>FedEx St. Jude Championship - $10 PGA Tiers</td>
-                    <td>PGA Tiers</td>
-                    <td>2 / 1000</td>
-                    <td>$10</td>
-                    <td>$8,750</td>
-                </tr>
-                 <tr>
-                    <td>Spooky Express $10 BMW Championship Golf Contest</td>
-                    <td>PGA Tiers</td>
-                    <td>10 / 1000</td>
-                    <td>$10</td>
-                    <td>$8,750</td>
-                </tr>
-                <tr>
-                    <td>NFL SURVIVOR (beat_the_sportsbook)</td>
-                    <td>NFL Survivor</td>
-                    <td>1 / 1000</td>
-                    <td>$10</td>
-                    <td>$8,750</td>
-                </tr>
-                <tr>
-                    <td>NFL SEASON-LONG SURVIVOR 🔥</td>
-                    <td>NFL Survivor</td>
-                    <td>0 / 500</td>
-                    <td>$20</td>
-                    <td>$8,750</td>
-                </tr>
-                <tr>
-                    <td>WEEK 1 NFL PICK'EM 🏈</td>
-                    <td>NFL Pick'Em</td>
-                    <td>150 / 1000</td>
-                    <td>$10</td>
-                    <td>$8,750</td>
-                </tr>
-                <tr>
-                    <td>shipitnation Tiers Contest</td>
-                    <td>Tiers</td>
-                    <td>0 / 56</td>
-                    <td>$100</td>
-                    <td>$5,040</td>
-                </tr>
-                 <tr>
-                    <td>Spooky Express $5 TOUR Championship Golf Contest</td>
-                    <td>PGA Tiers</td>
-                    <td>18 / 1000</td>
-                    <td>$5</td>
-                    <td>$4,375</td>
-                </tr>
-                <tr>
-                    <td>CFB SURVIVOR 🔥🔥🔥</td>
-                    <td>CFB Survivor</td>
-                    <td>1 / 250</td>
-                    <td>$20</td>
-                    <td>$4,375</td>
-                </tr>
-                <tr>
-                    <td>FedEx St. Jude Championship</td>
-                    <td>PGA Tiers</td>
-                    <td>17 / 334</td>
-                    <td>$5</td>
-                    <td>$1,503</td>
-                </tr>
-                <tr>
-                    <td>Splash $5 CFB Survivor</td>
-                    <td>CFB Survivor</td>
-                    <td>47 / 223</td>
-                    <td>$5</td>
-                    <td>$1,003</td>
-                </tr>
-                <tr>
-                    <td>PGA One & Done Reboot 🚀</td>
-                    <td>O&D</td>
-                    <td>1 / 100</td>
-                    <td>$10</td>
-                    <td>$875</td>
-                </tr>
-                <tr>
-                    <td>FedEx Championship Tiers 📦</td>
-                    <td>Tiers</td>
-                    <td>1 / 50</td>
-                    <td>$10</td>
-                    <td>$437.50</td>
-                </tr>
-                <tr>
-                    <td>MLB HIT STREAK SURVIVOR 🔥</td>
-                    <td>MLB Player Survivor</td>
-                    <td>4 / 50</td>
-                    <td>$5</td>
-                    <td>$218.75</td>
-                </tr>
-                <tr>
-                    <td>$50 PGA FedEx St. Jude Championship Tiers - H2H</td>
-                    <td>PGA Tiers</td>
-                    <td>1 / 2</td>
-                    <td>$50</td>
-                    <td>$90</td>
-                </tr>
-                <tr>
-                    <td>$50 MLB Hit Streak Survivor - H2H Sunday</td>
-                    <td>MLB Player Survivor</td>
-                    <td>1 / 2</td>
-                    <td>$50</td>
-                    <td>$90</td>
-                </tr>
-                <tr>
-                    <td>$10 MLB Hit Streak Survivor - 5 Player Sunday</td>
-                    <td>MLB Player Survivor</td>
-                    <td>1 / 5</td>
-                    <td>$10</td>
-                    <td>$45</td>
-                </tr>
-                 <tr>
-                    <td>$10 MLB Hit Streak Survivor - H2H Sunday</td>
-                    <td>MLB Player Survivor</td>
-                    <td>0 / 2</td>
-                    <td>$10</td>
-                    <td>$18</td>
-                </tr>
-                <tr>
-                    <td>$5 MLB Hit Streak Survivor - H2H Sunday</td>
-                    <td>MLB Player Survivor</td>
-                    <td>0 / 2</td>
-                    <td>$5</td>
-                    <td>$9</td>
-                </tr>
+            <tbody id="contest-table-body">
+                <!-- Contest rows will be dynamically inserted here -->
             </tbody>
         </table>
     </div>
 
     <script>
-        const canvas = document.getElementById('matrix-canvas');
-        const ctx = canvas.getContext('2d');
+        // --- DATA SOURCE ---
+        // In a real application, this data would be fetched from an external API or a JSON file.
+        // To update the list, you would only need to change this data source.
+        const contestData = [
+            { name: "Circa Survivor", url: "https://www.circasports.com/circa-survivor", gameType: "NFL Survivor", entries: "N/A", entryFee: "$1,000", prizes: "$9,000,000+ Guaranteed" },
+            { name: "Circa Millions VI", url: "https://www.circasports.com/contests", gameType: "NFL Pick'em", entries: "N/A", entryFee: "$1,000", prizes: "$6,000,000 Guaranteed" },
+            { name: "DraftKings Main Event NFL Survivor", url: "https://sportsbook.draftkings.com/pools", gameType: "NFL Survivor", entries: "18,515 / Unlimited", entryFee: "$100", prizes: "$1,666,350" },
+            { name: "DraftKings Mega NFL Survivor Pool", url: "https://sportsbook.draftkings.com/pools", gameType: "NFL Survivor", entries: "729 / Unlimited", entryFee: "$1,000", prizes: "$685,260" },
+            { name: "DraftKings Mini NFL Survivor Pool", url: "https://sportsbook.draftkings.com/pools", gameType: "NFL Survivor", entries: "N/A", entryFee: "$10", prizes: "$100,000" },
+            { name: "DraftKings Free $30K Football Survivor", url: "https://sportsbook.draftkings.com/pools", gameType: "NFL Survivor", entries: "251,059 / Unlimited", entryFee: "Free", prizes: "$30,000" },
+            { name: "The Big Splash $2.5M NFL Survivor", url: "https://app.splashsports.com/contest-lobby", gameType: "NFL Survivor", entries: "274 / 18519", entryFee: "$150", prizes: "$2,500,065" },
+            { name: "D. Epigskin's Main NFL Survival", url: "https://app.splashsports.com/contest-lobby", gameType: "NFL Survivor", entries: "729 / 20000", entryFee: "$100", prizes: "$1,800,000" },
+            { name: "H. Walker's Ultimate Survivor", url: "https://app.splashsports.com/contest-lobby", gameType: "NFL Survivor", entries: "1910 / 50000", entryFee: "$25", prizes: "$1,125,000" },
+            { name: "ONLY THE STRONG SURVIVE!!", url: "https://app.splashsports.com/contest-lobby", gameType: "NFL Survivor", entries: "9 / 25000", entryFee: "$25", prizes: "$546,875" },
+            { name: "For The Fans - Survivor '25", url: "https://app.splashsports.com/contest-lobby", gameType: "NFL Survivor", entries: "276 / 9723", entryFee: "$40", prizes: "$350,028" },
+            { name: "2025 Eliminator", url: "https://app.splashsports.com/contest-lobby", gameType: "NFL Survivor", entries: "28 / 5000", entryFee: "$50", prizes: "$225,000" },
+            { name: "Kelly & Murray's $150K CFB Survivor Challenge", url: "https://app.splashsports.com/contest-lobby", gameType: "CFB Survivor", entries: "95 / 1667", entryFee: "$100", prizes: "$150,030" },
+            { name: "NFL Survivor $150K", url: "https://app.splashsports.com/contest-lobby", gameType: "NFL Survivor", entries: "0 / 250", entryFee: "$10", prizes: "$150,000" },
+            { name: "NFL Survivor $100K", url: "https://app.splashsports.com/contest-lobby", gameType: "NFL Survivor", entries: "0 / 130", entryFee: "$10", prizes: "$100,000" },
+            { name: "H. King of the Hill 2025", url: "https://app.splashsports.com/contest-lobby", gameType: "NFL Survivor", entries: "32 / 2000", entryFee: "$50", prizes: "$87,500" },
+            { name: "NFL Survivor $75K", url: "https://app.splashsports.com/contest-lobby", gameType: "NFL Survivor", entries: "0 / 725", entryFee: "$10", prizes: "$75,000" },
+            { name: "A. The Gumball Rally", url: "https://app.splashsports.com/contest-lobby", gameType: "NFL Survivor", entries: "44 / 700", entryFee: "$100", prizes: "$63,000" },
+            { name: "Splash $50K NFL Survivor", url: "https://app.splashsports.com/contest-lobby", gameType: "NFL Survivor", entries: "1419 / 11112", entryFee: "$5", prizes: "$50,004" },
+            { name: "Splash $50K CFB Survivor", url: "https://app.splashsports.com/contest-lobby", gameType: "CFB Survivor", entries: "97 / 2223", entryFee: "$25", prizes: "$50,017" },
+            { name: "High Roller Eliminator", url: "https://app.splashsports.com/contest-lobby", gameType: "NFL Survivor", entries: "3 / 300", entryFee: "$100", prizes: "$26,250" },
+            { name: "NFL SURVIVOR (beat_the_sportsbook)", url: "https://app.splashsports.com/contest-lobby", gameType: "NFL Survivor", entries: "2 / 1000", entryFee: "$25", prizes: "$21,875" },
+            { name: "NFL SURVIVOR (beat_the_sportsbook)", url: "https://app.splashsports.com/contest-lobby", gameType: "NFL Survivor", entries: "0 / 3000", entryFee: "$5", prizes: "$13,500" },
+            { name: "D. Epigskin's Hit Streak Survivor", url: "https://app.splashsports.com/contest-lobby", gameType: "Player Survivor", entries: "19 / 512", entryFee: "$25", prizes: "$11,200" },
+            { name: "Spooky Express $10 FedEx St. Jude Golf Contest", url: "https://app.splashsports.com/contest-lobby", gameType: "PGA Tiers", entries: "19 / 1000", entryFee: "$10", prizes: "$8,750" },
+            { name: "FedEx St. Jude Championship - $10 PGA Tiers", url: "https://app.splashsports.com/contest-lobby", gameType: "PGA Tiers", entries: "2 / 1000", entryFee: "$10", prizes: "$8,750" },
+            { name: "Spooky Express $10 BMW Championship Golf Contest", url: "https://app.splashsports.com/contest-lobby", gameType: "PGA Tiers", entries: "10 / 1000", entryFee: "$10", prizes: "$8,750" },
+            { name: "NFL SURVIVOR (beat_the_sportsbook)", url: "https://app.splashsports.com/contest-lobby", gameType: "NFL Survivor", entries: "1 / 1000", entryFee: "$10", prizes: "$8,750" },
+            { name: "NFL SEASON-LONG SURVIVOR 🔥", url: "https://app.splashsports.com/contest-lobby", gameType: "NFL Survivor", entries: "0 / 500", entryFee: "$20", prizes: "$8,750" },
+            { name: "WEEK 1 NFL PICK'EM 🏈", url: "https://app.splashsports.com/contest-lobby", gameType: "NFL Pick'Em", entries: "150 / 1000", entryFee: "$10", prizes: "$8,750" },
+            { name: "shipitnation Tiers Contest", url: "https://shipitnation.com/", gameType: "Tiers", entries: "0 / 56", entryFee: "$100", prizes: "$5,040" },
+            { name: "Spooky Express $5 TOUR Championship Golf Contest", url: "https://app.splashsports.com/contest-lobby", gameType: "PGA Tiers", entries: "18 / 1000", entryFee: "$5", prizes: "$4,375" },
+            { name: "CFB SURVIVOR 🔥🔥🔥", url: "https://app.splashsports.com/contest-lobby", gameType: "CFB Survivor", entries: "1 / 250", entryFee: "$20", prizes: "$4,375" },
+            { name: "FedEx St. Jude Championship", url: "https://app.splashsports.com/contest-lobby", gameType: "PGA Tiers", entries: "17 / 334", entryFee: "$5", prizes: "$1,503" },
+            { name: "Splash $5 CFB Survivor", url: "https://app.splashsports.com/contest-lobby", gameType: "CFB Survivor", entries: "47 / 223", entryFee: "$5", prizes: "$1,003" },
+            { name: "PGA One & Done Reboot 🚀", url: "https://app.splashsports.com/contest-lobby", gameType: "O&D", entries: "1 / 100", entryFee: "$10", prizes: "$875" },
+            { name: "FedEx Championship Tiers 📦", url: "https://app.splashsports.com/contest-lobby", gameType: "Tiers", entries: "1 / 50", entryFee: "$10", prizes: "$437.50" },
+            { name: "MLB HIT STREAK SURVIVOR 🔥", url: "https://app.splashsports.com/contest-lobby", gameType: "MLB Player Survivor", entries: "4 / 50", entryFee: "$5", prizes: "$218.75" },
+            { name: "$50 PGA FedEx St. Jude Championship Tiers - H2H", url: "https://app.splashsports.com/contest-lobby", gameType: "PGA Tiers", entries: "1 / 2", entryFee: "$50", prizes: "$90" },
+            { name: "$50 MLB Hit Streak Survivor - H2H Sunday", url: "https://app.splashsports.com/contest-lobby", gameType: "MLB Player Survivor", entries: "1 / 2", entryFee: "$50", prizes: "$90" },
+            { name: "$10 MLB Hit Streak Survivor - 5 Player Sunday", url: "https://app.splashsports.com/contest-lobby", gameType: "MLB Player Survivor", entries: "1 / 5", entryFee: "$10", prizes: "$45" },
+            { name: "$10 MLB Hit Streak Survivor - H2H Sunday", url: "https://app.splashsports.com/contest-lobby", gameType: "MLB Player Survivor", entries: "0 / 2", entryFee: "$10", prizes: "$18" },
+            { name: "$5 MLB Hit Streak Survivor - H2H Sunday", url: "https://app.splashsports.com/contest-lobby", gameType: "MLB Player Survivor", entries: "0 / 2", entryFee: "$5", prizes: "$9" },
+        ];
 
-        // Set canvas to full screen
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
+        // --- DYNAMIC TABLE GENERATION ---
+        // This function runs when the page is loaded.
+        window.onload = function() {
+            const tableBody = document.getElementById('contest-table-body');
+            let tableHtml = '';
 
-        // Characters for the rain - Katakana is a classic choice
-        const katakana = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン';
-        const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-        const nums = '0123456789';
-        const alphabet = katakana + latin + nums;
+            // Loop through each contest in the data source
+            contestData.forEach(contest => {
+                tableHtml += `
+                    <tr>
+                        <td><a href="${contest.url}" target="_blank">${contest.name}</a></td>
+                        <td>${contest.gameType}</td>
+                        <td>${contest.entries}</td>
+                        <td>${contest.entryFee}</td>
+                        <td>${contest.prizes}</td>
+                    </tr>
+                `;
+            });
 
-        const fontSize = 16;
-        const columns = canvas.width / fontSize;
+            // Insert the generated HTML into the table body
+            tableBody.innerHTML = tableHtml;
 
-        // Array to store the y-position of each drop
-        const rainDrops = [];
-        for (let x = 0; x < columns; x++) {
-            rainDrops[x] = 1;
-        }
-
-        const draw = () => {
-            // Fill canvas with a semi-transparent black to create the fading trail effect
-            ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
-            ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-            ctx.fillStyle = '#0F0'; // Green text
-            ctx.font = fontSize + 'px monospace';
-
-            // Loop over each column
-            for (let i = 0; i < rainDrops.length; i++) {
-                // Get a random character from the alphabet
-                const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
-                // Draw the character
-                ctx.fillText(text, i * fontSize, rainDrops[i] * fontSize);
-
-                // Reset drop to the top randomly to make the rain uneven
-                if (rainDrops[i] * fontSize > canvas.height && Math.random() > 0.975) {
-                    rainDrops[i] = 0;
-                }
-
-                // Move the drop down
-                rainDrops[i]++;
-            }
+            // Also initialize the matrix animation
+            startMatrix();
         };
 
-        // Start the animation
-        setInterval(draw, 33);
 
-        // Adjust canvas on window resize
-        window.addEventListener('resize', () => {
+        // --- MATRIX BACKGROUND ANIMATION ---
+        function startMatrix() {
+            const canvas = document.getElementById('matrix-canvas');
+            const ctx = canvas.getContext('2d');
+
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
-            // Recalculate columns and reset drops if needed
-        });
+
+            const katakana = 'アァカサタナハマヤャラワガザダバパイィキシチニヒミリヰギジヂビピウゥクスツヌフムユュルグズブヅプエェケセテネヘメレヱゲゼデベペオォコソトノホモヨョロヲゴゾドボポヴッン';
+            const latin = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            const nums = '0123456789';
+            const alphabet = katakana + latin + nums;
+
+            const fontSize = 16;
+            const columns = canvas.width / fontSize;
+
+            const rainDrops = [];
+            for (let x = 0; x < columns; x++) {
+                rainDrops[x] = 1;
+            }
+
+            const draw = () => {
+                ctx.fillStyle = 'rgba(0, 0, 0, 0.05)';
+                ctx.fillRect(0, 0, canvas.width, canvas.height);
+                ctx.fillStyle = '#0F0';
+                ctx.font = fontSize + 'px monospace';
+                for (let i = 0; i < rainDrops.length; i++) {
+                    const text = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
+                    ctx.fillText(text, i * fontSize, rainDrops[i] * fontSize);
+                    if (rainDrops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+                        rainDrops[i] = 0;
+                    }
+                    rainDrops[i]++;
+                }
+            };
+
+            setInterval(draw, 33);
+
+            window.addEventListener('resize', () => {
+                canvas.width = window.innerWidth;
+                canvas.height = window.innerHeight;
+            });
+        }
     </script>
 </body>
 </html>
